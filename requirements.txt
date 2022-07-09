@@ -4,3 +4,4 @@ scikit_learn==1.1.1
 streamlit==1.8.1
 protobuf==3.20
 streamlit_lottie
+requests==2.27.1
