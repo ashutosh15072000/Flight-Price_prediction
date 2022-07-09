@@ -12,17 +12,19 @@ import datetime
 import helper
 import pickle
 from sklearn.ensemble import GradientBoostingRegressor
-
+from streamlit_lottie import st_lottie
 
 flight=pd.read_csv('data_train.csv')
 print(flight)
 
 
+def load_lottieurl(url: str):
+    r = requests.get(url)
+    if r.status_code != 200:
+        return None
+k=load_lottieurl('https://assets5.lottiefiles.com/packages/lf20_xLbDyO.json')  
 
-image = Image.open('Flight-Price-Prediction.png')
-
-st.image(image, caption='Flight Price Prediction')
-
+st_lottie(k,speed=2)
 
 
 st.header("DataFrame")
