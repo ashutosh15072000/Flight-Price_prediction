@@ -13,6 +13,7 @@ import helper
 import pickle
 from sklearn.ensemble import GradientBoostingRegressor
 from streamlit_lottie import st_lottie
+import requests
 
 flight=pd.read_csv('data_train.csv')
 print(flight)
