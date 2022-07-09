@@ -25,7 +25,7 @@ def load_lottieurl(url: str):
         return None
 k=load_lottieurl('https://assets5.lottiefiles.com/packages/lf20_xLbDyO.json')  
 
-st_lottie(k,speed=2)
+st_lottie(k,speed=2,width=400,height=500)
 
 
 st.header("DataFrame")
