@@ -8,7 +8,7 @@ Created on Sun Jun 26 14:56:45 2022
 import pandas as pd
 import pickle
 import re
-loaded_model = pickle.load(open('finalized_model.pkl','rb'))
+loaded_model = pickle.load(open('finalized.pkl','rb'))
 s=loaded_model['Noramlization']
 model=loaded_model['model']
 
