@@ -14,7 +14,7 @@ import pickle
 from sklearn.ensemble import GradientBoostingRegressor
 
 
-flight=pd.read_excel('Data_Train.xlsx')
+flight=pd.read_csv('data_train.csv')
 print(flight)
 
 
