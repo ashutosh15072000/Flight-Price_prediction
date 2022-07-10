@@ -1,5 +1,8 @@
 # Flight-Price_prediction
 
+## Solution
+[Kaggle](https://www.kaggle.com/code/ashutosh6639/flight-prediction)
+
 # Table of Content
 
 - Demo
