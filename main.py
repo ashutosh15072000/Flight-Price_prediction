@@ -1,9 +1,4 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Sun Jun 26 12:53:06 2022
 
-@author: ayush
-"""
 
 import streamlit as st
 import pandas as pd
@@ -12,20 +7,17 @@ import datetime
 import helper
 import pickle
 from sklearn.ensemble import GradientBoostingRegressor
-from streamlit_lottie import st_lottie
-import requests
 
-flight=pd.read_csv('data_train.csv')
+
+flight=pd.read_excel('Data_Train.xlsx')
 print(flight)
 
 
-def load_lottieurl(url: str):
-    r = requests.get(url)
-    if r.status_code != 200:
-        return None
-k=load_lottieurl('https://assets5.lottiefiles.com/packages/lf20_xLbDyO.json')  
 
-st_lottie(k,speed=2,width=400,height=500)
+image = Image.open('Flight-Price-Prediction.png')
+
+st.image(image, caption='Flight Price Prediction')
+
 
 
 st.header("DataFrame")
@@ -82,6 +74,13 @@ if  submit_button:
     st.success(f'₹{round(price[0])}')
     st.balloons()
   
+
+
+        
+
+           
+            
+
 
 
         
